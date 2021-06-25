@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # File: guessinggame.sh
-
 #function to compare first value with second value, return first value is higher or lower as second value
 function higherlow {
   if [[ $2 -gt $1 ]]
@@ -10,7 +9,7 @@ function higherlow {
     echo "Your guess is too low, please try again!"
   fi
 }
-
+#Main program
 amount=$(ls | wc -l) 
 echo "How many files are in the current directory? What do you guess?"
 echo "Type in your guess:"
